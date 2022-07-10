@@ -745,15 +745,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ 𝗔𝗗𝗗 𝗠𝗘 𝗧𝗢 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/MWUpdatez'),
-            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/OpusTechz')
+            InlineKeyboardButton('🎥 𝗠𝗢𝗩𝗜𝗘𝗦 🎥', url='https://t.me/Mkv_blasters'),
+            InlineKeyboardButton('📺 𝗦𝗘𝗥𝗜𝗘𝗦 📺', url='https://t.me/mkv_serieshub')
             ],[      
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('ℹ️ 𝗛𝗘𝗟𝗣 ℹ️', callback_data='help'),
+            InlineKeyboardButton('🍻 𝗔𝗕𝗢𝗨𝗧 🍻', callback_data='about')
             ],[
-            InlineKeyboardButton('✅ SUBSCᏒIBΞ  ✅', url='https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA')
+            InlineKeyboardButton('🍿 𝗠𝗢𝗩𝗜𝗘 𝗖𝗟𝗨𝗕 🍿', url='https://t.me/mkv_requestroom')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
