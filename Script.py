@@ -6,7 +6,7 @@ class script(object):
  ● 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽 𝚃𝙷𝙴𝚁𝙴..
  ● 𝚃𝙷𝙴𝙽 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚂𝙴𝙴 𝙼𝚈 𝙶𝚁𝙴𝙰𝚃𝙽𝙴𝚂𝚂..👑
  
- 𝐌𝐘 𝐁𝐄𝐒𝐓 𝐅𝐑𝐈𝐄𝐍𝐃 : <a href=https://t.me/themastertheblaster>❣️ ∂εcσ∂εɾ รεεɱαɳ ❣️</a></b>"""
+ 𝐌𝐘 𝐁𝐄𝐒𝐓 𝐅𝐑𝐈𝐄𝐍𝐃:<a href=https://t.me/themastertheblaster>❣️ ∂εcσ∂εɾ รεεɱαɳ ❣️</a></b>"""
 
     HELP_TXT = """𝙷𝙴𝚈 𝙱𝚄𝙳𝙳𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
