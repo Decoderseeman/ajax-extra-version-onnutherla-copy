@@ -1400,7 +1400,13 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Here is what i found for your query {search}"
+        cap = f"🤗𝗛𝗲𝘆,<b>{mention}</b>
+
+🎭 𝗥𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗠𝗼𝘃𝗶𝗲  : <code>{search}</code>
+
+👥 𝗥𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗚𝗿𝗼𝘂𝗽  : <b>[𝕄𝕂𝕍 ℝ𝕖𝕢𝕦𝕖𝕤𝕥 ℝ𝕠𝕠𝕞](https://t.me/mkv_requestroom)</b>
+
+𝗛𝗲𝗿𝗲 𝗜𝘀 𝘁𝗵𝗲 𝗥𝗲𝘀𝘂𝗹𝘁𝘀 𝗙𝗼𝗿 <code>{search}</code>"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
@@ -1426,7 +1432,19 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I couldn't find any movie in that name.")
+        k = await msg.reply("☹️ 𝗛𝗲𝘆 {mention}, 𝗜'𝗺 𝗮𝗹𝗿𝗲𝗮𝗱𝘆 𝗶𝗻 𝗱𝗲𝗽𝗿𝗲𝘀𝘀𝗶𝗼𝗻.
+
+● 𝗜 𝗟𝗼𝘀𝘁 𝗠𝘆 𝗡𝗮𝗻𝗰𝘆..
+
+● 𝗕𝘂𝘁 𝗡𝗼𝘄 𝗬𝗼𝘂 𝗔𝗹𝘀𝗼 𝗔𝗻𝗻𝗼𝘆𝗶𝗻𝗴 𝗠𝗲..
+
+● 𝗣𝗹𝗲𝗮𝘀𝗲 𝗦𝗲𝗻𝗱 𝗧𝗵𝗲 𝗖𝗼𝗿𝗿𝗲𝗰𝘁 𝗠𝗼𝘃𝗶𝗲 𝗡𝗮𝗺𝗲.
+
+● 𝗜𝗳 𝗬𝗼𝘂 𝗗𝗶𝗱𝗻'𝘁 𝗚𝗲𝘁 𝗧𝗵𝗲 𝗖𝗼𝗿𝗿𝗲𝗰𝘁 𝗙𝗶𝗹𝗲 𝗦𝗲𝗻𝗱 𝗧𝗵𝗲 𝗠𝗼𝘃𝗶𝗲 𝗡𝗮𝗺𝗲 𝗜𝗻𝗰𝗹𝘂𝗱𝗶𝗻𝗴 𝗬𝗲𝗮𝗿.
+
+                                        ( 𝗢𝗥 )  
+
+● 𝗦𝗲𝗻𝗱 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 𝗧𝗼 𝗠𝘆 𝗕𝗘𝗦𝗧 𝗙𝗥𝗜𝗘𝗡𝗗 ●")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -1455,7 +1473,19 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        k = await msg.reply("☹️ 𝗛𝗲𝘆 {mention}, 𝗜'𝗺 𝗮𝗹𝗿𝗲𝗮𝗱𝘆 𝗶𝗻 𝗱𝗲𝗽𝗿𝗲𝘀𝘀𝗶𝗼𝗻.
+
+● 𝗜 𝗟𝗼𝘀𝘁 𝗠𝘆 𝗡𝗮𝗻𝗰𝘆..
+
+● 𝗕𝘂𝘁 𝗡𝗼𝘄 𝗬𝗼𝘂 𝗔𝗹𝘀𝗼 𝗔𝗻𝗻𝗼𝘆𝗶𝗻𝗴 𝗠𝗲..
+
+● 𝗣𝗹𝗲𝗮𝘀𝗲 𝗦𝗲𝗻𝗱 𝗧𝗵𝗲 𝗖𝗼𝗿𝗿𝗲𝗰𝘁 𝗠𝗼𝘃𝗶𝗲 𝗡𝗮𝗺𝗲.
+
+● 𝗜𝗳 𝗬𝗼𝘂 𝗗𝗶𝗱𝗻'𝘁 𝗚𝗲𝘁 𝗧𝗵𝗲 𝗖𝗼𝗿𝗿𝗲𝗰𝘁 𝗙𝗶𝗹𝗲 𝗦𝗲𝗻𝗱 𝗧𝗵𝗲 𝗠𝗼𝘃𝗶𝗲 𝗡𝗮𝗺𝗲 𝗜𝗻𝗰𝗹𝘂𝗱𝗶𝗻𝗴 𝗬𝗲𝗮𝗿.
+
+                                        ( 𝗢𝗥 )  
+
+● 𝗦𝗲𝗻𝗱 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 𝗧𝗼 𝗠𝘆 𝗕𝗘𝗦𝗧 𝗙𝗥𝗜𝗘𝗡𝗗 ●")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -1467,7 +1497,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?",
+    await msg.reply("<b>I couldn't find anything related to that\nDid you mean any one of these?</b>",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 async def manual_filters(client, message, text=False):
