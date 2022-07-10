@@ -1,25 +1,24 @@
 class script(object):
-    START_TXT = """<b>👋𝙷𝙴𝚈 𝙱𝚄𝙳𝙳𝚈</b>
- {},
+    START_TXT = """<b>👋𝙷𝙴𝚈 𝙱𝚄𝙳𝙳𝚈,</b>{},
 <b>𝙸 𝙰𝙼 <a href=https://t.me/{}>{}</a>,
 
  ● 𝙸 𝙰𝙼, 𝙸 𝙰𝙼 𝙰 𝙶𝚁𝙴𝙰𝚃 𝙱𝙰𝙱𝚈 𝚂𝙸𝚃𝚃𝙴𝚁 𝙵𝙾𝚁 𝚈𝙾𝚄𝚁 𝙵𝙸𝙻𝙴𝚂..
  ● 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽 𝚃𝙷𝙴𝚁𝙴..
- ● 𝚃𝙷𝙴𝙽 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚂𝙴𝙴 𝙼𝚈 𝙶𝚁𝙴𝙰𝚃𝙽𝙴𝚂𝚂...✌️👑
+ ● 𝚃𝙷𝙴𝙽 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚂𝙴𝙴 𝙼𝚈 𝙶𝚁𝙴𝙰𝚃𝙽𝙴𝚂𝚂..👑
  
- 😈𝐌𝐘 𝐁𝐄𝐒𝐓 𝐅𝐑𝐈𝐄𝐍𝐃 : <a href=https://t.me/themastertheblaster>❣️ ∂εcσ∂εɾ รεεɱαɳ ❣️</a></b>"""
+ 𝐌𝐘 𝐁𝐄𝐒𝐓 𝐅𝐑𝐈𝐄𝐍𝐃 : <a href=https://t.me/themastertheblaster>❣️ ∂εcσ∂εɾ รεεɱαɳ ❣️</a></b>"""
 
     HELP_TXT = """𝙷𝙴𝚈 𝙱𝚄𝙳𝙳𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """<b>✮ 𝙼𝚈 𝙽𝙰𝙼𝙴: <a href=https://t.me/mkvstevefilter_bot>💔 ѕτєνє нαяяιиgτοи 💔</a></b>
-<b>✮ 𝙼𝚈 𝙱𝙴𝚂𝚃 𝙵𝚁𝙸𝙴𝙽𝙳: <a href=https://t.me/themastertheblaster>❣️ ∂εcσ∂εɾ รεεɱαɳ ❣️</a></b>
-<b>✮ 𝙲𝙾𝚄𝙽𝚃𝚁𝚈: 𝚄𝚂𝙰</b>
-<b>✮ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙴𝙽𝙶𝙻𝙸𝚂𝙷</b>
-<b>✮ 𝚂𝚃𝙰𝚃𝙴: 𝚃𝙴𝚇𝙰𝚂</b>
-<b>✮ 𝙱𝙾𝚁𝙽: 𝙷𝙰𝚆𝙺𝙸𝙽𝚂</b>
-<b>✮ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: 𝚅1.0.43</b>
+<b>✮ 𝙼𝚈 𝙵𝚁𝙸𝙴𝙽𝙳: <a href=https://t.me/themastertheblaster>❣️ ∂εcσ∂εɾ รεεɱαɳ ❣️</a></b>
+<b>✮ 𝙲𝙾𝚄𝙽𝚃𝚁𝚈:  <a href=https://www.google.com/search?q=USA+&ei=Z3rKYvOXGtS34t4Pp6mEgAU&ved=0ahUKEwiz5_KR4e34AhXUm9gFHacUAVAQ4dUDCA4&uact=5&oq=USA+&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAELEDEEMyCggAELEDEIMBEEMyBAgAEEMyCggAELEDEIMBEEMyBAgAEEMyBggAEAoQQzIECAAQQzIGCAAQChBDMgQIABBDMgcIABCxAxBDOgcIABBHELADOgcIABCwAxBDOgoIABDkAhCwAxgBOg8ILhDUAhDIAxCwAxBDGAI6DAguEMgDELADEEMYAjoHCC4QsQMQQzoKCC4QxwEQ0QMQQzoHCC4Q1AIQQzoOCAAQgAQQsQMQgwEQyQM6BAguEEM6FAgAEOoCELQCEIoDELcDENQDEOUCOhEILhCABBCxAxCDARDHARDRAzoLCAAQgAQQsQMQgwE6DgguELEDEIMBEMcBENEDOgsILhCABBCxAxCDAToNCC4QsQMQgwEQ1AIQQzoKCC4QxwEQowIQQzoKCC4QsQMQgwEQQ0oECEEYAEoECEYYAVCFCljAHGD_OmgCcAF4A4AB3ASIAd8dkgEHMi0yLjUtNpgBAKABAbABCsgBEMABAdoBBggBEAEYCdoBBggCEAEYCA&sclient=gws-wiz#>𝚄𝚂𝙰</a></b>
+<b>✮ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: <a href=https://en.wikipedia.org/wiki/English_language>𝙴𝙽𝙶𝙻𝙸𝚂𝙷</a></b>
+<b>✮ 𝚂𝚃𝙰𝚃𝙴: <a href=https://www.google.com/search?q=texas&ei=uozKYoTTHvjNseMP9P-Y6A0&gs_ssp=eJzj4tDP1TcwT4rPMWD0Yi1JrUgsBgAqsgUX&oq=texas&gs_lcp=Cgdnd3Mtd2l6EAEYADIICC4QsQMQkQIyBAgAEEMyBAgAEEMyCgguELEDENQCEEMyCgguELEDEIMBEEMyDQguELEDEIMBENQCEEMyDggAEIAEELEDEIMBEMkDMhEILhCABBCxAxCDARDHARDRAzIOCC4QgAQQsQMQgwEQ1AIyCwgAEIAEELEDEIMBOgcIABBHELADOgcIABCwAxBDOgcIABCxAxBDOgUIABCABDoKCAAQ6gIQtAIQQzoKCAAQsQMQgwEQQzoQCC4QsQMQgwEQxwEQ0QMQQzoICAAQsQMQgwE6BwguELEDEEM6DAgAELEDEIMBEAoQQzoRCC4QgAQQsQMQgwEQxwEQrwFKBAhBGABKBAhGGABQ1gpYxyhgiDtoAnABeAOAAdYBiAHEEZIBBjAuMTUuMZgBAKABAbABCsgBCsABAQ&sclient=gws-wiz#>𝚃𝙴𝚇𝙰𝚂</a></b>
+<b>✮ 𝙱𝙾𝚁𝙽: <a href=https://www.google.com/search?q=hawkins+city&ei=1ozKYvWeL8KUseMPkNefwAc&gs_ssp=eJzj4tTP1TcwNEhONjRg9OLJSCzPzswrVkjOLKkEAFl_B7w&oq=haw&gs_lcp=Cgdnd3Mtd2l6EAEYAzIHCC4QsQMQQzIQCC4QsQMQgwEQxwEQowIQQzIECAAQQzIKCC4QsQMQgwEQQzIHCC4Q1AIQQzIECAAQQzIECAAQQzIECAAQQzILCC4QgAQQsQMQ1AIyBwguENQCEEM6BwgAEEcQsAM6BwgAELADEEM6CggAEOQCELADGAE6DQgAEOQCELADEMkDGAE6DwguENQCEMgDELADEEMYAjoMCC4QyAMQsAMQQxgCOgoILhDHARDRAxBDOgoIABCxAxCDARBDOgcIABCxAxBDOg4IABCABBCxAxCDARDJAzoECC4QQzoNCC4Q1AIQ6gIQtAIQQzoKCC4Q6gIQtAIQQzoLCAAQgAQQsQMQgwE6CggAELEDEIMBEAo6CAgAELEDEIMBOhEILhCABBCxAxCDARDHARCjAjoICC4QsQMQgwE6CgguEMcBEKMCEENKBAhBGABKBAhGGAFQrQtYjR9ghTdoAnABeAOAAdkBiAH1B5IBBTAuNi4xmAEAoAEBsAEKyAEQwAEB2gEGCAEQARgJ2gEGCAIQARgI&sclient=gws-wiz#>𝙷𝙰𝚆𝙺𝙸𝙽𝚂</a></b>
+<b>✮ 𝙼𝚈 𝙻𝙾𝚅𝙴𝚁: <a href=https://www.google.com/search?q=nancy+wheeler&ei=Ro3KYqShHe-hseMP5ZuS2Ak&oq=NAn&gs_lcp=Cgdnd3Mtd2l6EAMYADIFCAAQkQIyBQgAEJECMgQILhBDMgcILhDUAhBDMgQILhBDMgQIABBDMgoILhDHARCjAhBDMg4ILhCABBCxAxCDARDUAjIICC4QgAQQsQMyCwguEIAEELEDEIMBOgcIABBHELADOgcIABCwAxBDOgoIABDkAhCwAxgBOgwILhDIAxCwAxBDGAI6EgguEMcBEKMCEMgDELADEEMYAjoKCC4QsQMQgwEQQzoECAAQAzoFCAAQgAQ6CgguEOoCELQCEEM6CggAEOoCELQCEEM6DQguENQCEOoCELQCEEM6EAguELEDEIMBEMcBENEDEEM6CwgAEIAEELEDEIMBOggIABCxAxCDAToICC4Q1AIQkQJKBAhBGABKBAhGGAFQ7QZYxBtgpTJoAnABeASAAfkCiAH3D5IBBzAuMS42LjGYAQCgAQGwAQrIARPAAQHaAQYIARABGAnaAQYIAhABGAg&sclient=gws-wiz>𝙽𝙰𝙽𝙲𝚈 𝚆𝙷𝙴𝙴𝙻𝙴𝚁</a></b>
 <b>✮ 𝙼𝚈 𝙾𝙵𝙵𝙸𝙲𝙴: <a href=https://t.me/Mkv_blasters>𝙼𝙺𝚅 𝙱𝙻𝙰𝚂𝚃𝙴𝚁𝚂</a></b>
-<b>✮ 𝙼𝚈 𝙷𝙸𝙶𝙷 𝚂𝙲𝙷𝙾𝙾𝙻: <a href=https://youtube.com/channel/UCdk53DCXKoKOKgKeohUEnmA>𝙷𝙰𝚆𝙺𝙸𝙽𝚂 𝙷𝙸𝙶𝙷 𝚂𝙲𝙷𝙾𝙾𝙻</a></b>"""
+<b>✮ 𝙼𝚈 𝚂𝙲𝙷𝙾𝙾𝙻: <a href=https://youtube.com/channel/UCdk53DCXKoKOKgKeohUEnmA>𝙷𝙰𝚆𝙺𝙸𝙽𝚂 𝙷𝙸𝙶𝙷 𝚂𝙲𝙷𝙾𝙾𝙻</a></b>"""
     DONATION_TXT = """<b>𝐂𝐨𝐨𝐤𝐢𝐞𝐬 & 𝐒𝐦𝐨𝐨𝐭𝐡𝐢𝐞𝐬</b> 
 
 ›› <b>𝐃𝐨𝐧𝐚𝐭𝐢𝐨𝐧</b>
