@@ -239,7 +239,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('<b>💌 𝙵𝙾𝙻𝙻𝙾𝚆 𝙼𝙴 💌', url='https://instagram.com/looserz_cutz?igshid=YmMyMTA2M2Y=') ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('<b>💌 𝙵𝙾𝙻𝙻𝙾𝚆 𝙼𝙴 💌</b>', url='https://instagram.com/looserz_cutz?igshid=YmMyMTA2M2Y=') ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
